@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: monospace;
+    font-family: Lato;
 }
 
 html {
@@ -27,6 +27,51 @@ div.main_background {
     height: 100vh;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.links {
+    text-decoration: none;
+    flex: 1;
+    color: white;
+    padding: 15px 15px 15px 15px;
+    color: white;
+}
+
+.links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 10px 10px 30px;
+    font-family: Lato;
+}
+
+.links ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+}
+
+.links ul li::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: lightskyblue;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.links ul li:hover::after{
+    width: 10%;
+}
+
 h1.portfolio {
     padding-top: 100px;
     padding-bottom: 20px;
@@ -40,33 +85,6 @@ div.intro_contentarea {
     text-align: center;
     background-color: black;
     padding: 0px 90px 90px 90px;
-}
-
-li.nav {
-    display: inline-block;
-    text-transform: uppercase;
-    font-family: Helvetica;
-    text-decoration: none;
-    font-size: 23px;
-}
-
-.nav {
-    text-decoration: none;
-    color: white;
-    background-color: black;
-    margin-top: 0px;
-    padding: 15px 15px 15px 15px;
-}
-
-a.navlink {
-    color: white;
-}
-
-li.nav:hover{
-    background-color: lightblue;
-    text-decoration: none;
-    margin: 0 auto;
-    border-radius: 12px;
 }
 
 div.intro_content {
@@ -262,7 +280,7 @@ h1.head_paint {
     text-align: center;
     padding: 40px 0px 0px 0px;
     font-size: 60px;
-    font-family: "Mono Dance";
+    font-family: Lato;
 }
 
 img.paint_1 {
@@ -403,25 +421,84 @@ img.paint_1, img.paint_2, img.paint_3 {
 
 /* resources.html */
 
-.res_head {
-    text-align: center;
-    padding: 40px 0px 50px 0px;
-    font-size: 60px;
-    font-family: "Mono Dance";
+.resources {
+    background-image: url("https://images.unsplash.com/photo-1496355723323-30286a0b340d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height: 100vh;
+}
+h1.res_22 {
+    padding-top: 70px;
+    padding-bottom: 0px;
+    font-family: Oswald,"Moon Dance";
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
 }
 
-.res_draw, .res_paint{
+div.res_3 {
+    text-align: center;
+    background-color: black;
+    padding: 30px 532px 90px 532px;
+}
+
+div.res_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 525px 0px 0px 0px;
+}
+
+.res_head {
+    text-align: center;
+    padding: 20px 0px 40px 0px;
+    font-size: 40px;
+    font-family: Oswald;
+}
+
+div.started {
+    top: -500px;
+}
+
+div.resources {
+    display: inline-block;
+}
+
+.res_draw{
     text-align: left;
-    margin-bottom: 50px;
+    margin: 0px 30px 30px 100px;
+    float: left;
+}
+
+.res_paint{
+    text-align: left;
+    margin: 0px 100px 30px 30px;
+    float: right;
+}
+
+.draw {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 22px 70px 14px;
 }
 
 .h1_res {
     text-align: center;
-    margin-bottom: 20px;
+    margin: 40px 20px 20px 20px;
+    font-family: Oswald;
 }
 
-a.blog1 {
+.blogs {
     text-align: center;
+    margin: 0px 0px 30px 0px;
+}
+
+.blog1 {
+    color: black;
+}
+
+.p_draw {
+    margin: 20px 0px 0px 0px;
 }
 
 /* sketches.html */

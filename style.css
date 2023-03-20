@@ -830,6 +830,25 @@ button.con_btn:hover:before {
 }
 
 @media only screen and (max-width: 1000px){
+
+    .links1{
+        padding-left: 0;
+    }
+
+    ul{
+        display: flex;
+    }
+
+    .links1 ul li a{
+        font-size: 10px;
+    }
+
+    .links1 ul li{
+        padding-left: 12px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+
     .arrow-button{
         display: inline-flex;
         align-items: center;
